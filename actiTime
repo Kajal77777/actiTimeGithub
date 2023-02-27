@@ -1,0 +1,12 @@
+//GetRect()--->return type is Rectangle
+public class GetRect {
+	public static void main(String[] args) throws InterruptedException {
+			// TODO Auto-generated method stub
+			WebDriver d=new ChromeDriver();
+			d.get("https://demo.actitime.com/login.do");
+		    Dimension ele = d.findElement(By.id("loginButton")).getSize();
+			Thread.sleep(3000);
+			System.out.println("width"+ele.getWidth());
+			System.out.println("height"+ele.getHeight());		
+	}
+}
